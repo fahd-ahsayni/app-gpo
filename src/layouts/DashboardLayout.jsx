@@ -85,7 +85,7 @@ export default function DashboardLayou() {
         <Popover as="header" className="bg-gray-950 pb-24">
           {({ open }) => (
             <>
-              <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+              <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:container lg:px-8">
                 <div className="relative flex items-center justify-center py-5 lg:justify-between">
                   {/* Logo */}
                   <div className="absolute left-0 flex-shrink-0 lg:static">
@@ -291,6 +291,7 @@ export default function DashboardLayou() {
                           <div className="mt-3 space-y-1 px-2">
                             {navigation.map((item) => (
                               <Link
+                                key={item.name}
                                 to={item.href}
                                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-800"
                               >
@@ -351,7 +352,7 @@ export default function DashboardLayou() {
           )}
         </Popover>
         <main className="-mt-24 pb-8">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div className="mx-auto max-w-3xl lg:container">
             <h1 className="sr-only">Page title</h1>
             {/* Main 3 column grid */}
             <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-3 lg:gap-8">
@@ -370,7 +371,7 @@ export default function DashboardLayou() {
               </div>
 
               {/* Right column */}
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 gap-4 lg:pr-8 pr-4">
                 {/* Announcements */}
                 <section aria-labelledby="announcements-title">
                   <div className="overflow-hidden rounded-lg bg-white shadow">

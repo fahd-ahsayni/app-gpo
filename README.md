@@ -1,8 +1,28 @@
-# React + Vite
+#user
+fname: String
+lname: String
+id: String
+date naiss: Date
+email
+pass
+role : => admin, dev, leader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+project => # en p, in r, c, d || date start, date delivery, id, name, desc, delay, team : User[]
 
-Currently, two official plugins are available:
+task => # c, non c, name, desc, delay, date start, date delivery, ... 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+deployement => vercel + pipline CI/CD
+
+
+
+
+
+
+
+valid => true => new Date().current => format => 16 juin 2024
+valid => false => n
+
+button delivered => new Date().current => format => 16 juin 2024
+
+
+
